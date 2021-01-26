@@ -1,0 +1,20 @@
+{
+  "name": "autonumeric-vue",
+  "version": "1.0.0",
+  "description": "Vue wrapper over autonumeric library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirill-malyhin/autonumeric-vue.git"
+  },
+  "keywords": [],
+  "author": "Kirill Malyhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirill-malyhin/autonumeric-vue/issues"
+  },
+  "homepage": "https://github.com/kirill-malyhin/autonumeric-vue#readme"
+}
