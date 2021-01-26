@@ -23,12 +23,6 @@ export default {
     anElement: null // Store the reference to the AutoNumeric object
   }),
 
-  computed: {
-    numericOptions: ({ options }) => ({
-      ...options
-    })
-  },
-
   watch: {
     options () {
       this.updateOptions()
@@ -44,12 +38,12 @@ export default {
     },
 
     updateOptions () {
-      this.anElement.update(this.numericOptions)
+      this.anElement.update(this.options)
     }
   },
 
   mounted () {
-    this.anElement = new AutoNumeric(this.$refs.autoNumericRef, this.numericOptions)
+    this.anElement = new AutoNumeric(this.$refs.autoNumericRef, this.options)
 
     this.anElement.set(this.value)
     this.onChange()
