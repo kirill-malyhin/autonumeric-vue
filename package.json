@@ -1,8 +1,8 @@
 {
   "name": "autonumeric-vue",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vue wrapper over autonumeric library",
-  "main": "dist/main.js",
+  "main": "src/components/AutoNumericVue.vue",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production"
@@ -24,7 +24,7 @@
     "target": "git://github.com/autoNumeric/vue-autoNumeric.git",
     "basePath": "",
     "files": [
-      "src/Autonumeric.vue"
+      "src/components/AutoNumericVue.vue"
     ]
   },
   "dependencies": {

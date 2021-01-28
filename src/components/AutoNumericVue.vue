@@ -12,7 +12,7 @@
 import AutoNumeric from 'autonumeric/dist/autoNumeric.min'
 
 export default {
-  name: 'VueAutonumeric',
+  name: 'AutoNumericVue',
 
   props: {
     value: { required: true },
