@@ -1,6 +1,6 @@
 {
   "name": "autonumeric-vue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vue wrapper over autonumeric library",
   "main": "dist/main.js",
   "scripts": {
