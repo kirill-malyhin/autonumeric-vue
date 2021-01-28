@@ -15,7 +15,7 @@ export default {
   name: 'AutoNumericVue',
 
   props: {
-    value: { required: true },
+    value: { required: true, default: null },
     options: { type: Object, default: null }
   },
 
@@ -26,6 +26,10 @@ export default {
   watch: {
     options () {
       this.updateOptions()
+    },
+
+    value () {
+      this.updateValue()
     }
   },
 
@@ -39,14 +43,17 @@ export default {
 
     updateOptions () {
       this.anElement.update(this.options)
+    },
+
+    updateValue () {
+      const value = this.value !== null ? this.value : ''
+      this.anElement.set(value)
     }
   },
 
   mounted () {
     this.anElement = new AutoNumeric(this.$refs.autoNumericRef, this.options)
-
-    this.anElement.set(this.value)
-    this.onChange()
+    this.updateValue()
   }
 }
 </script>

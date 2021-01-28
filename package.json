@@ -1,6 +1,6 @@
 {
   "name": "autonumeric-vue",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Vue wrapper over autonumeric library",
   "main": "src/components/AutoNumericVue.vue",
   "scripts": {
