@@ -14,13 +14,13 @@ yarn add autonumeric-vue
 npm install autonumeric-vue --save
 ```
 
-You will as usual be able to use the `vue-autonumeric` component in your Vue components using:
+You will as usual be able to use the `autonumeric-vue` component in your Vue components using:
 ```js
-import VueAutonumeric from '../src/components/VueAutonumeric.vue';
+import AutoNumericVue from 'autonumeric-vue/src/components/AutoNumericVue';
 
 export default {
     components: {
-        VueAutonumeric
+        AutoNumericVue
     }
 }
 ```
@@ -31,7 +31,7 @@ The AutoNumeric component can be instantiated the same way `AutoNumeric` can.
 
 With an option object:
 ```html
-<vue-autonumeric
+<AutoNumericVue
      v-model="myValue"
      :options="{
          digitGroupSeparator: '.',
@@ -42,23 +42,23 @@ With an option object:
          roundingMethod: 'U',
          minimumValue: '0'
      }"
-></vue-autonumeric>
+></AutoNumericVue>
 ```
 
 With a predefined option name:
 ```html
-<vue-autonumeric
+<AutoNumericVue
     v-model="myValue"
     :options="'French'"
-></vue-autonumeric>
+></AutoNumericVue>
 ```
 
 With multiple option objects/predefined options:
 ```html
-<vue-autonumeric
+<AutoNumericVue
     v-model="myValue"
     :options="['euro', { minimumValue: '0' }]"
-></vue-autonumeric>
+></AutoNumericVue>
 ```
 
 #### Other props
@@ -67,23 +67,23 @@ With multiple option objects/predefined options:
 
 You can define the input placeholder using:
 ```html
-<vue-autonumeric
+<AutoNumericVue
     v-model="myValue"
     :options="'euro'"
     :placeholder="'Enter your value here'"
-></vue-autonumeric>
+></AutoNumericVue>
 ```
 
 ### Caveats
 
-Please note that directly setting a `:value='42'` on the `<vue-autonumeric>` component **will break it** (really!).<br>
+Please note that directly setting a `:value='42'` on the `<AutoNumericVue>` component **will break it** (really!).<br>
 Do **NOT** do that:
 ```html
-<vue-autonumeric
+<AutoNumericVue
     v-model="myValue"
     :options="{ minimumValue: '0' }"
     :value="42042.69" <!-- This fails -->
-></vue-autonumeric>
+></AutoNumericVue>
 ```
 
 ### Demo
